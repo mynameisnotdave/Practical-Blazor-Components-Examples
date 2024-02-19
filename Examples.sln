@@ -1,14 +1,14 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KanbanBoard", "KanbanBoard\KanbanBoard.csproj", "{CD3870F1-6BB0-474A-99C3-DEE545694377}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KanbanBoard", "KanbanBoard\KanbanBoard.csproj", "{CD3870F1-6BB0-474A-99C3-DEE545694377}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{33C30A74-CC54-4B6D-83AE-96DF6EDAEDA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courses.Demos.Server", "Demos\Courses.Demos.Server\Courses.Demos.Server.csproj", "{2B485A62-A366-4C01-8B63-1B42597675CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Courses.Demos.Server", "Demos\Courses.Demos.Server\Courses.Demos.Server.csproj", "{2B485A62-A366-4C01-8B63-1B42597675CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courses.Demos", "Demos\Courses.Demos\Courses.Demos.csproj", "{54CE5649-3786-4968-A5EF-F2ECB2759FEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Courses.Demos", "Demos\Courses.Demos\Courses.Demos.csproj", "{54CE5649-3786-4968-A5EF-F2ECB2759FEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Courses.Demo.Shared", "Demos\Courses.Demo.Shared\Courses.Demo.Shared.csproj", "{C27F5891-91A2-4B36-B8F6-C2F28E1A61DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Courses.Demo.Shared", "Demos\Courses.Demo.Shared\Courses.Demo.Shared.csproj", "{C27F5891-91A2-4B36-B8F6-C2F28E1A61DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
