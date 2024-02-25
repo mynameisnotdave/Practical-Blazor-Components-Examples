@@ -1,7 +1,8 @@
 ﻿@page "/"
 @inject KanbanStore Store
 
-@if(columns != null){
+@if(columns != null)
+{
     <div class="d-flex vh-100">
         <div class="flex-grow-1 d-flex flex-column">
             <div class="p-2 border-bottom bg-primary text-white">
@@ -10,19 +11,13 @@
             <div class="p-4 flex-grow-1 d-flex">
                 @foreach (var column in columns)
                 {
-                    <div class="p-2 border-end w-25">
-                        <h3 class="mb-2">@column.Name</h3>
-                        <div class="py-3 d-flex flex-column">
-                            @foreach (var card in cards.Where(x => x.ColumnId == column.Id))
-                            {                            
-                                <div class="card mb-2">
-                                    <div class="card-body">
-                                        <span class="card-text">@card.Text</span>
-                                    </div>
-                                </div>                        
-                            }
-                        </div>
-                    </div>
+                    <ColumnComponent Name="@column.Name">
+                        @foreach (var card in cards.Where(x => x.ColumnId == column.Id))
+                        {                            
+                            <CardComponent Text="@card.Text" />                      
+                        }
+                    </ColumnComponent>
+                        
                 }
             </div>
         </div>
@@ -40,4 +35,4 @@
         cards = Store.GetCards();
     }
 
-}
+}}
