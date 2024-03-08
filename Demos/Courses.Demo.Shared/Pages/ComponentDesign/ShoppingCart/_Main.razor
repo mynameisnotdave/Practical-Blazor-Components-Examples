@@ -18,12 +18,12 @@
                 <tbody>
                 @foreach (var item in CartItems)
                 {
-                    <tr>
-                        <td>@item.Product.Name</td>
-                        <td>@item.Quantity</td>
-                        <td>@item.TotalPrice</td>
-                        <td><button @onclick="@(() => RemoveItem(item.Id))">Remove</button></td>
-                    </tr>
+                    <CartItemRow 
+                        ProductName="@item.Product.Name"
+                        ProductQuantity="@item.Quantity"
+                        ProductTotalPrice="@item.TotalPrice"
+                        OnItemRemove="@(() => RemoveItem(item.Id))"
+                        />
                 }
                 </tbody>
                 <tfoot>

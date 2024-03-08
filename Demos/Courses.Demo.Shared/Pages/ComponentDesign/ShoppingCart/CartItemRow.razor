@@ -1,0 +1,27 @@
+<tr>
+    <td>@ProductName</td>
+    <td>@ProductQuantity</td>
+    <td>@ProductTotalPrice</td>
+    <td>
+        <button @onclick="OnItemRemoveImpl">Remove</button>
+    </td>
+</tr>
+
+@code {
+    [Parameter]
+    public string ProductName { get; set; }
+    
+    [Parameter]
+    public int ProductQuantity { get; set; }
+    
+    [Parameter]
+    public decimal ProductTotalPrice { get; set; }
+    
+    [Parameter]
+    public EventCallback OnItemRemove { get; set; }
+
+    void OnItemRemoveImpl()
+    {
+        OnItemRemove.InvokeAsync();
+    }
+}
